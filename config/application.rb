@@ -18,5 +18,7 @@ module MonkaRailsbasic
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.time_zone = 'Sapporo'
   end
 end
