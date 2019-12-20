@@ -10,5 +10,12 @@
   <%= @user.phone_number %>
 </p>
 
+<p>
+  <strong>Photo:</strong>
+  <% if @user.photo.attached? %>
+    <%= image_tag @user.photo, width: '100'%>
+  <% end%>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
