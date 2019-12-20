@@ -5,7 +5,7 @@ class User < ApplicationRecord
     has_one_attached :photo
 
     def thumbnail
-        photo.variant(resize: '300*300')
+        photo.variant(resize: '300x300')
     end
 
 end
