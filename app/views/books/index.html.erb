@@ -24,10 +24,10 @@
         <td><%= book.id %></td>  
         <td><%= book.title %></td>
         <td><%= book.author %></td>
-        <td><%= book.published_on %></td>
+        <td><%= format_datetime(book.published_on) %></td>
         <td><%= book.price %></td>
         <td><%= book.displayed %></td>
-        <td><%= book.created_at %></td>
+        <td><%= format_datetime(book.created_at) %></td>
         <td>
         <% if book.book_image.attached? %>
           <%= image_tag book.book_image, width: '100'%>
