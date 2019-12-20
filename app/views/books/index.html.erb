@@ -13,6 +13,7 @@
       <th>Displayed</th>
       <th>Created at</th>
       <th>Book_image</th>
+      <th>Reviews</th>
       <th colspan="2"></th>
     </tr>
   </thead>
@@ -32,6 +33,7 @@
           <%= image_tag book.book_image, width: '100'%>
         <% end%>
         </td>
+        <td><%= book.reviews.count %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
